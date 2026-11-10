@@ -1,0 +1,12 @@
+# Bản đồ cho repo dùng lại: tên logic → đường dẫn tương đối từ gốc repo này.
+# Repo dùng lại chỉ đọc đường dẫn qua file này. Dời file thì sửa đường dẫn ở đây trong cùng pull request.
+# Đổi hay xoá một tên logic là thay đổi phá vỡ: tăng version, tăng bản major, ghi CHANGELOG.md.
+version: 1
+paths:
+  principles: principles.md
+  rubric: rubric.yaml
+  adopting: adopting.md
+  sources: sources.md
+  product_template: templates/in-this-product.md
+  review_template: templates/review-table.md
+  decisions: decisions

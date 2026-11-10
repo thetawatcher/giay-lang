@@ -1,0 +1,26 @@
+# Bảy nguyên tắc của Giấy lặng cho máy đọc: bảng rà thiết kế, cổng review của các dự án dùng lại.
+# Thứ tự và tên phải khớp các mục ### 3.x của principles.md (scripts/check.mjs chặn khi lệch).
+# Thêm, bỏ, hay đổi id một nguyên tắc là thay đổi phá vỡ: tăng version, tăng bản major, ghi CHANGELOG.md.
+version: 1
+principles:
+  - id: chu-dan-khung-lui
+    name: Chữ dẫn, khung lùi
+    check: Thứ bậc đến từ cỡ chữ, độ đậm, khoảng trắng; viền, thẻ, bóng đổ chỉ ở chỗ thật cần?
+  - id: mot-mau-nhan
+    name: Một màu nhấn, dùng tiết kiệm
+    check: Chỉ một màu nhấn, cho hành động chính, focus, liên kết, câu không được lướt; màu trạng thái luôn có chữ?
+  - id: moi-man-mot-viec
+    name: Mỗi màn một việc
+    check: Một tiêu đề, một dòng phụ, một hành động chính; hành động phụ lùi lại?
+  - id: im-lang-mac-dinh
+    name: Im lặng mặc định
+    check: Không banner thường trực hay số đếm kéo người dùng; vùng trống có một câu nói vì sao?
+  - id: chu-ngan
+    name: Chữ ngắn
+    check: Nhãn ngắn, gọi đúng tên việc, không tên nội bộ; mọi câu chữ nằm trong bảng nhãn?
+  - id: chuyen-dong-nho
+    name: Chuyển động nhỏ
+    check: Chuyển động chỉ phản hồi thao tác, khoảng 0.1 giây, tắt khi giảm chuyển động?
+  - id: gia-tri-qua-token
+    name: Mọi giá trị đi qua token
+    check: Không số rời; tương phản đạt AA; dùng được bằng bàn phím, focus nhìn thấy?
