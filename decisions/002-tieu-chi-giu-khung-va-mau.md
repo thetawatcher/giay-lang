@@ -1,6 +1,6 @@
 # 002 — Tiêu chí giữ khung, vạch kẻ và màu nhấn
 
-- **status:** proposed
+- **status:** accepted
 - **date:** 2026-11-13
 
 ## Quyết định

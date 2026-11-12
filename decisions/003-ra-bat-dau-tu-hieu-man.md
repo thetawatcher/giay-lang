@@ -1,6 +1,6 @@
 # 003 — Rà một màn bắt đầu từ hiểu màn và phương án bố cục
 
-- **status:** proposed
+- **status:** accepted
 - **date:** 2026-11-13
 
 ## Quyết định
