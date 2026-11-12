@@ -2,7 +2,7 @@
 
 ## Đọc bằng lời
 
-File này nói một sản phẩm cần làm gì để theo Giấy lặng, và cách giữ phần chung tách khỏi lựa chọn riêng của sản phẩm. Triết lý ở [principles.md](principles.md) không gắn với sản phẩm nào. Mỗi sản phẩm ghim một version của repo này, ghi lựa chọn riêng ở chỗ của mình, và rà mỗi thiết kế bằng bảng bảy nguyên tắc.
+File này nói một sản phẩm cần làm gì để theo Giấy lặng, và cách giữ phần chung tách khỏi lựa chọn riêng của sản phẩm. Triết lý ở [principles.md](principles.md) không gắn với sản phẩm nào. Mỗi sản phẩm ghim một version của repo này, ghi lựa chọn riêng ở chỗ của mình, và rà mỗi màn theo ba bước: hiểu màn, đưa phương án, rồi kiểm bằng bảng bảy nguyên tắc.
 
 ## Sáu bước
 
@@ -12,6 +12,16 @@ File này nói một sản phẩm cần làm gì để theo Giấy lặng, và c
 4. **Chọn thang màu đã được thiết kế sẵn**, có vai trò rõ cho từng bậc, và có bản tối nếu sản phẩm cần. Đừng tự đặt từng mã màu.
 5. **Viết test trước khi viết màn:** không có mã màu rời, không có cỡ chữ ngoài thang, tương phản đạt AA, không có chuỗi giao diện viết cứng ngoài bảng nhãn.
 6. **Viết mục "Giấy lặng trong sản phẩm này"** theo [templates/in-this-product.md](templates/in-this-product.md): ghi lựa chọn cụ thể ở repo của sản phẩm, để triết lý chung không bị sửa mỗi lần có một lựa chọn riêng.
+
+## Rà một màn
+
+Bảng bảy nguyên tắc kiểm một phương án; nó không nghĩ ra phương án. Bắt đầu từ bảng thì chỉ ra được đề xuất bớt. Vì vậy rà một màn đi ba bước, theo khung [templates/review-table.md](templates/review-table.md):
+
+1. **Hiểu màn.** Ai mở màn, lúc nào, trên thiết bị gì; câu hỏi đầu tiên họ cần màn trả lời; việc chính của màn; dữ liệu thật trông ra sao (bao nhiêu mục, mục dài nhất, lúc rỗng).
+2. **Đưa phương án.** Hai hoặc ba bố cục khác nhau về thứ tự khối, cách nhóm, và cái gì hiện sẵn, vẽ với dữ liệu thật. Người duyệt chọn một.
+3. **Kiểm bằng bảng.** Chạy bảy nguyên tắc trên phương án được chọn. Thừa và bớt quá tay đều là lệch.
+
+Sản phẩm có cổng tự động thì có thể bắt PR đổi giao diện có đủ ba phần này. Cổng của sản phẩm tự quyết; repo này chỉ giữ khung.
 
 ## Gắn vào repo
 

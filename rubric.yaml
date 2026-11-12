@@ -5,13 +5,13 @@ version: 1
 principles:
   - id: chu-dan-khung-lui
     name: Chữ dẫn, khung lùi
-    check: Thứ bậc đến từ cỡ chữ, độ đậm, khoảng trắng; viền, thẻ, bóng đổ chỉ ở chỗ thật cần?
+    check: Thứ bậc đến từ cỡ chữ, độ đậm, khoảng trắng; khung, vạch kẻ chỉ ở dãy để lướt, nhóm lưu cùng nhau, khối có vòng đời riêng; bóng đổ chỉ ở lớp nổi; bỏ khung có làm mất nhóm hay mất chỗ lướt không?
   - id: mot-mau-nhan
     name: Một màu nhấn, dùng tiết kiệm
-    check: Chỉ một màu nhấn, cho hành động chính, focus, liên kết, câu không được lướt; màu trạng thái luôn có chữ?
+    check: Chỉ một màu nhấn, cho chỗ bấm được, focus và câu không được lướt; bỏ màu có làm chỗ bấm được trông như chữ thường không; màu trạng thái luôn có chữ?
   - id: moi-man-mot-viec
     name: Mỗi màn một việc
-    check: Một tiêu đề, một dòng phụ, một hành động chính; hành động phụ lùi lại?
+    check: Một tiêu đề, một dòng phụ, một hành động chính là việc người dùng mở màn để làm; hành động phụ lùi lại, nhưng việc chính không bị lùi?
   - id: im-lang-mac-dinh
     name: Im lặng mặc định
     check: Không banner thường trực hay số đếm kéo người dùng; vùng trống có một câu nói vì sao?

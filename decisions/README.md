@@ -5,3 +5,5 @@ Mỗi quyết định về chính triết lý (thêm, bỏ, sửa một nguyên 
 | Số | Quyết định |
 | --- | --- |
 | [001](001-repo-rieng.md) | Giấy lặng thành repo riêng, có version |
+| [002](002-tieu-chi-giu-khung-va-mau.md) | Tiêu chí giữ khung, vạch kẻ và màu nhấn (đề xuất) |
+| [003](003-ra-bat-dau-tu-hieu-man.md) | Rà một màn bắt đầu từ hiểu màn và phương án bố cục (đề xuất) |

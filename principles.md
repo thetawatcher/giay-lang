@@ -28,9 +28,15 @@ Mỗi nguyên tắc gồm phát biểu, lý do, và một ví dụ giao diện. 
 
 ### 3.1 Chữ dẫn, khung lùi
 
-Thứ bậc trên màn được tạo bằng cỡ chữ, độ đậm và khoảng trắng. Viền và thẻ chỉ dùng khi một nhóm thật sự phải tách khỏi phần xung quanh. Bóng đổ chỉ dành cho lớp nổi lên trên màn, như menu hay ngăn kéo.
+Thứ bậc trên màn được tạo bằng cỡ chữ, độ đậm và khoảng trắng. Viền, vạch kẻ và thẻ chỉ dùng khi một nhóm thật sự phải tách khỏi phần xung quanh, và đó là ba chỗ:
 
-Lý do: mỗi đường viền là một tín hiệu mắt phải xử lý. Mười hộp lồng nhau làm màn hình ồn, dù mỗi hộp riêng lẻ trông vô hại.
+- Một dãy mục cùng loại mà người dùng lướt để tìm một mục: vạch mảnh ngăn từng dòng, không có khung bọc cả dãy.
+- Một nhóm ô được lưu hay bỏ cùng nhau, tách khỏi phần còn lại của form: một khung mảnh quanh nhóm, vì nhóm là một đơn vị thao tác.
+- Một khối có vòng đời riêng, hiện ra rồi mất đi khi xong việc, như các bước làm quen: tách khỏi trang.
+
+Bóng đổ chỉ dành cho lớp nổi lên trên màn, như menu hay ngăn kéo.
+
+Lý do: mỗi đường viền là một tín hiệu mắt phải xử lý. Mười hộp lồng nhau làm màn hình ồn, dù mỗi hộp riêng lẻ trông vô hại. Nhưng bỏ cả vạch ngăn dòng hay khung của một đơn vị thao tác thì mắt mất chỗ bám: một dãy dài dính thành một khối chữ, và người dùng không biết ô nào đi cùng nút nào.
 
 ```text
 Nên                                    Tránh
@@ -48,11 +54,29 @@ Tiêu đề nhỏ và khoảng trắng            Hộp trong hộp, nhãn viế
 đã đủ để chia phần.                    mỗi phần một khung.
 ```
 
+```text
+Nên                                    Tránh (bớt quá tay)
+──────────────────────────────         ──────────────────────────────
+Ghi chú gần đây                        Ghi chú gần đây
+Họp nhóm thứ Năm             12/10     Họp nhóm thứ Năm 12/10
+──────────────────────────────         Danh sách đọc 11/10
+Danh sách đọc                11/10     Ý tưởng bài viết 09/10
+──────────────────────────────
+Ý tưởng bài viết             09/10     Nhắc lại
+                                       Ngày  [ 14/10 ]
+┌ Nhắc lại ──────────────────┐         Giờ   [ 08:00 ]   Bỏ nhắc
+│ Ngày  [ 14/10 ]            │
+│ Giờ   [ 08:00 ]   Bỏ nhắc  │
+└────────────────────────────┘
+Vạch ngăn dòng cho dãy để lướt,        Dãy dính thành một khối; không
+khung cho nhóm ô đi cùng nhau.         thấy Bỏ nhắc bỏ cả ngày lẫn giờ.
+```
+
 ### 3.2 Một màu nhấn, dùng tiết kiệm
 
-Nền và chữ dùng các tông trung tính ấm. Chỉ có một màu nhấn, dùng cho hành động chính, viền focus, liên kết, và những câu người dùng không được đọc lướt qua (ví dụ điều kiện đi kèm một đề xuất). Màu trạng thái (cảnh báo, đạt, mới) chỉ dùng cho đúng trạng thái đó, và luôn có chữ đi kèm, không để màu tự nói một mình.
+Nền và chữ dùng các tông trung tính ấm. Chỉ có một màu nhấn, dùng cho chỗ bấm được (hành động chính, liên kết, dòng mở ra một màn khác), viền focus, và những câu người dùng không được đọc lướt qua (ví dụ điều kiện đi kèm một đề xuất). Tiết kiệm nghĩa là không tô màu chỗ không bấm được, không có nghĩa là bớt màu ở chỗ bấm được: chữ không bấm được thì không mang màu nhấn, chỗ bấm được thì luôn mang. Màu trạng thái (cảnh báo, đạt, mới) chỉ dùng cho đúng trạng thái đó, và luôn có chữ đi kèm, không để màu tự nói một mình. Màu nhấn không làm màu trạng thái.
 
-Lý do: khi chỉ một thứ có màu, mắt biết ngay phải nhìn đâu. Khi mọi thứ đều có màu, không thứ gì nổi lên.
+Lý do: khi chỉ một thứ có màu, mắt biết ngay phải nhìn đâu. Khi mọi thứ đều có màu, không thứ gì nổi lên. Khi chỗ bấm được trông như chữ thường, người dùng phải chạm thử mới biết.
 
 ```text
 Nên                                    Tránh
@@ -65,11 +89,23 @@ Dời buổi họp sang thứ Năm.             [Xanh] Dời buổi họp…
                                        không loại nào nổi lên.
 ```
 
+```text
+Nên                                    Tránh (bớt quá tay)
+──────────────────────────────         ──────────────────────────────
+Ghi chú gần đây                        Ghi chú gần đây
+Họp nhóm thứ Năm   ← màu nhấn          Họp nhóm thứ Năm
+Sửa lúc 12/10      ← chữ phụ           Sửa lúc 12/10
+Danh sách đọc                          Danh sách đọc
+Sửa lúc 11/10                          Sửa lúc 11/10
+                                       Tên ghi chú mở được nhưng trông
+                                       như chữ thường; phải chạm thử.
+```
+
 ### 3.3 Mỗi màn một việc
 
-Mỗi màn có một tiêu đề, một dòng phụ, và một hành động chính. Hành động phụ dùng nút viền hoặc chữ thường. Nếu một màn cần hai hành động chính, có lẽ đó là hai màn.
+Mỗi màn có một tiêu đề, một dòng phụ, và một hành động chính. Hành động chính là việc người dùng mở màn này để làm; nó giữ vai chính dù màn còn nhiều nút khác. Hành động phụ dùng nút viền hoặc chữ thường. Hành động lặp lại trên từng dòng của một danh sách không tính là hành động chính của màn, nên là nút phụ. Nếu một màn cần hai hành động chính, có lẽ đó là hai màn.
 
-Lý do: người đang bận nghĩ ra quyết định kém khi phải chọn giữa nhiều nút trông như nhau.
+Lý do: người đang bận nghĩ ra quyết định kém khi phải chọn giữa nhiều nút trông như nhau. Khi chính việc họ đến để làm cũng lùi lại, họ phải đi tìm nó.
 
 ```text
 Nên                                    Tránh
