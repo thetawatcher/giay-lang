@@ -10,9 +10,9 @@ Repo này giữ Giấy lặng, một triết lý thiết kế giao diện dùng 
 | --- | --- |
 | [principles.md](principles.md) | Vì sao, hình ảnh gốc, bảy nguyên tắc có ví dụ nên và tránh |
 | [rubric.yaml](rubric.yaml) | Bảy nguyên tắc cho máy đọc: mã, tên, câu hỏi rà |
-| [adopting.md](adopting.md) | Sáu bước để một sản phẩm dùng Giấy lặng; ranh giới với repo sản phẩm |
+| [adopting.md](adopting.md) | Sáu bước để một sản phẩm dùng Giấy lặng; ba bước rà một màn; ranh giới với repo sản phẩm |
 | [sources.md](sources.md) | Nguồn gốc của từng phần |
-| [templates/](templates/) | Khung mục "Giấy lặng trong sản phẩm này" và bảng rà thiết kế |
+| [templates/](templates/) | Khung mục "Giấy lặng trong sản phẩm này" và bảng rà thiết kế (hiểu màn, phương án, bảy nguyên tắc) |
 | [decisions/](decisions/) | Quyết định về chính triết lý |
 | [MANIFEST.yaml](MANIFEST.yaml) | Tên logic → đường dẫn, cho mã và cổng của repo dùng lại |
 | [CHANGELOG.md](CHANGELOG.md) | Các version và phần đã đổi |
